@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Find the number</string>
+    <string name="greeting">Hi guys! This is the simple game where you must find the number!
+        The number chosen by computer function called "Random" from your range. Good luck!</string>
+    <string name="win">Congratulations! You win! Change the range to play again.</string>
+</resources>

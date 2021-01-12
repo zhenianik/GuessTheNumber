@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_100"
+    tools:context=".MyGame">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="360dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="252dp"
+        android:indeterminate="false"
+        android:max="10"
+        android:progress="1"
+        android:progressTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/rangeNumber"
+        android:layout_width="201dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:hint="enter your range"
+        android:inputType="numberDecimal"
+        android:onClick="setRandom"
+        android:textAlignment="center"
+        android:textColor="@color/indigo"
+        android:textColorHint="@color/indigo_100"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewChoseNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewChoseNumber"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Range:"
+        android:textColor="@color/purple_500"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/attemeptsCounter"
+        android:layout_width="195dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/indigo"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAttempts"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChoseNumber" />
+
+    <Button
+        android:id="@+id/checkNumberButton"
+        android:layout_width="178dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="checkTheNumber"
+        android:text="Check"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/yourNumber"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Enter your number"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/indigo"
+        android:textColorHint="@color/indigo_100"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAttempts"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Attempts:"
+        android:textColor="@color/purple_500"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChoseNumber" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="368dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/green_500"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkNumberButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
